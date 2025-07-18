@@ -1,0 +1,1016 @@
+2025-07-15 12:00:03.916 [restartedMain] INFO  c.r.l.vaadin.VadinExampleApplication - Starting VadinExampleApplication using Java 21.0.7 with PID 16294 (/Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example/target/classes started by tushartari in /Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example)
+2025-07-15 12:00:03.916 [restartedMain] DEBUG c.r.l.vaadin.VadinExampleApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-15 12:00:03.916 [restartedMain] INFO  c.r.l.vaadin.VadinExampleApplication - The following 1 profile is active: "production"
+2025-07-15 12:00:04.028 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-15 12:00:04.037 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 5 JPA repository interfaces.
+2025-07-15 12:00:04.130 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-07-15 12:00:04.131 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-15 12:00:04.131 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-15 12:00:04.131 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-15 12:00:04.152 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-15 12:00:04.152 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 235 ms
+2025-07-15 12:00:04.177 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereHandler com.vaadin.hilla.push.PushEndpoint mapped to context-path: /HILLA/push
+2025-07-15 12:00:04.177 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.hilla.push.PushEndpoint
+2025-07-15 12:00:04.177 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.AtmosphereResourceLifecycleInterceptor : Atmosphere LifeCycle
+2025-07-15 12:00:04.177 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.client.TrackMessageSizeInterceptor :  Track Message Size Interceptor using |
+2025-07-15 12:00:04.177 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.SuspendTrackerInterceptor : UUID Tracking Interceptor
+2025-07-15 12:00:04.183 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing AtmosphereFramework
+2025-07-15 12:00:04.226 [restartedMain] INFO  c.v.f.s.VaadinServletContextInitializer - Search for subclasses and classes with annotations took 0 ms
+2025-07-15 12:00:04.233 [restartedMain] INFO  c.v.b.d.s.DevModeStartupListener - Starting dev-mode updaters in /Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example folder.
+2025-07-15 12:00:04.242 [restartedMain] INFO  c.v.f.s.f.s.FullDependenciesScanner - Visited 128 classes. Took 9 ms.
+2025-07-15 12:00:04.242 [restartedMain] INFO  c.v.f.s.f.BundleValidationUtil - Checking if a development mode bundle build is needed
+2025-07-15 12:00:04.362 [restartedMain] INFO  c.v.f.s.f.BundleValidationUtil - A development mode bundle build is not needed
+2025-07-15 12:00:04.369 [vaadin-dev-server-1] INFO  c.v.f.s.f.TaskCopyFrontendFiles - Copying frontend resources from jar files ...
+2025-07-15 12:00:04.384 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-15 12:00:04.388 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-15 12:00:04.394 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-15 12:00:04.395 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2025-07-15 12:00:04.416 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@2d386801
+2025-07-15 12:00:04.416 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2025-07-15 12:00:04.418 [vaadin-dev-server-1] INFO  c.v.f.s.f.TaskCopyFrontendFiles - Visited 27 resources. Took 48 ms.
+2025-07-15 12:00:04.420 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-15 12:00:04.421 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-15 12:00:04.432 [vaadin-dev-server-1] WARN  c.v.f.s.frontend.TaskUpdateImports - Use the './' prefix for files in the '/Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example/./src/main/frontend' folder: 'generated/jar-resources/field-highlighter/theme/lumo/vaadin-user-tags.js', please update your annotations.
+2025-07-15 12:00:04.487 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-15 12:00:04.602 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-15 12:00:04.632 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+2025-07-15 12:00:04.664 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-15 12:00:04.669 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name getUserDetailsService
+2025-07-15 12:00:04.744 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-07-15 12:00:04.751 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereHandler com.vaadin.flow.server.communication.PushAtmosphereHandler mapped to context-path: /*
+2025-07-15 12:00:04.751 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.flow.server.communication.PushAtmosphereHandler
+2025-07-15 12:00:04.754 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using org.atmosphere.util.VoidAnnotationProcessor for processing annotation
+2025-07-15 12:00:04.755 [restartedMain] INFO  org.atmosphere.util.ForkJoinPool - Using ForkJoinPool  java.util.concurrent.ForkJoinPool. Set the org.atmosphere.cpr.broadcaster.maxAsyncWriteThreads to -1 to fully use its power.
+2025-07-15 12:00:04.756 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+2025-07-15 12:00:04.756 [restartedMain] INFO  o.a.container.JSR356AsyncSupport - JSR 356 Mapping path /VAADIN/push
+2025-07-15 12:00:04.756 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installing Default AtmosphereInterceptors
+2025-07-15 12:00:04.756 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+2025-07-15 12:00:04.756 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+2025-07-15 12:00:04.756 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+2025-07-15 12:00:04.756 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+2025-07-15 12:00:04.756 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.HeartbeatInterceptor : Heartbeat Interceptor Support
+2025-07-15 12:00:04.756 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+2025-07-15 12:00:04.756 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+2025-07-15 12:00:04.756 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+2025-07-15 12:00:04.756 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+2025-07-15 12:00:04.756 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor CORS Interceptor Support with priority FIRST_BEFORE_DEFAULT 
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Default Response's Headers Interceptor with priority AFTER_DEFAULT 
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Browser Padding Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Android Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.a.interceptor.HeartbeatInterceptor - HeartbeatInterceptor configured with padding value 'X', client frequency 0 seconds and server frequency 60 seconds
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Heartbeat Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor SSE Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor JSONP Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Atmosphere JavaScript Protocol with priority AFTER_DEFAULT 
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor with priority AFTER_DEFAULT 
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Browser disconnection detection with priority AFTER_DEFAULT 
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor org.atmosphere.interceptor.IdleResourceInterceptor with priority BEFORE_DEFAULT 
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Broadcaster Shared List Resources: false
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Broadcaster Polling Wait Time 100
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Shared ExecutorService supported: true
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Messaging ExecutorService Pool Size unavailable - Not instance of ThreadPoolExecutor
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Async I/O Thread Pool Size: 200
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using AtmosphereResurceFactory: org.atmosphere.cpr.DefaultAtmosphereResourceFactory
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Invoke AtmosphereInterceptor on WebSocket message true
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - HttpSession supported: true
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using org.atmosphere.inject.InjectableObjectFactory for dependency injection and object creation
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/10.1.42 using jakarta.servlet/3.0 and jsr356/WebSocket API
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere Framework 3.0.5.slf4jvaadin1 started.
+2025-07-15 12:00:04.757 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor  Track Message Size Interceptor using | with priority BEFORE_DEFAULT 
+2025-07-15 12:00:04.760 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-15 12:00:04.761 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using org.atmosphere.cpr.DefaultAnnotationProcessor for processing annotation
+2025-07-15 12:00:04.761 [restartedMain] INFO  o.a.cpr.DefaultAnnotationProcessor - AnnotationProcessor class org.atmosphere.cpr.DefaultAnnotationProcessor$BytecodeBasedAnnotationProcessor being used
+2025-07-15 12:00:07.089 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Auto detecting WebSocketHandler in /WEB-INF/classes/
+2025-07-15 12:00:07.089 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+2025-07-15 12:00:07.090 [restartedMain] INFO  o.a.container.JSR356AsyncSupport - JSR 356 Mapping path /HILLA/push
+2025-07-15 12:00:07.090 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installing Default AtmosphereInterceptors
+2025-07-15 12:00:07.090 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+2025-07-15 12:00:07.090 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+2025-07-15 12:00:07.090 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+2025-07-15 12:00:07.090 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+2025-07-15 12:00:07.090 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.HeartbeatInterceptor : Heartbeat Interceptor Support
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor CORS Interceptor Support with priority FIRST_BEFORE_DEFAULT 
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Default Response's Headers Interceptor with priority AFTER_DEFAULT 
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Browser Padding Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Android Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.a.interceptor.HeartbeatInterceptor - HeartbeatInterceptor configured with padding value 'X', client frequency 0 seconds and server frequency 60 seconds
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Heartbeat Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor SSE Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor JSONP Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Atmosphere JavaScript Protocol with priority AFTER_DEFAULT 
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor with priority AFTER_DEFAULT 
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Browser disconnection detection with priority AFTER_DEFAULT 
+2025-07-15 12:00:07.091 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor org.atmosphere.interceptor.IdleResourceInterceptor with priority BEFORE_DEFAULT 
+2025-07-15 12:00:07.092 [restartedMain] ERROR o.atmosphere.cpr.AtmosphereFramework - Failed to initialize Atmosphere Framework
+java.lang.IllegalStateException: Shutdown in progress
+	at java.base/java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:67)
+	at java.base/java.lang.Runtime.addShutdownHook(Runtime.java:250)
+	at org.atmosphere.cpr.AtmosphereFramework.init(AtmosphereFramework.java:927)
+	at org.atmosphere.cpr.AtmosphereFramework.init(AtmosphereFramework.java:832)
+	at org.atmosphere.cpr.AtmosphereFrameworkInitializer.configureFramework(AtmosphereFrameworkInitializer.java:76)
+	at org.atmosphere.cpr.AtmosphereServlet.configureFramework(AtmosphereServlet.java:83)
+	at org.atmosphere.cpr.AtmosphereServlet.configureFramework(AtmosphereServlet.java:79)
+	at org.atmosphere.cpr.AtmosphereServlet.init(AtmosphereServlet.java:74)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:843)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:707)
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedContext.load(TomcatEmbeddedContext.java:84)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base/java.util.TreeMap$ValueSpliterator.forEachRemaining(TreeMap.java:3250)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedContext.lambda$deferredLoadOnStartup$0(TomcatEmbeddedContext.java:67)
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedContext.doWithThreadContextClassLoader(TomcatEmbeddedContext.java:108)
+	at org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedContext.deferredLoadOnStartup(TomcatEmbeddedContext.java:66)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.performDeferredLoadOnStartup(TomcatWebServer.java:333)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:239)
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:44)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:405)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:394)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:586)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:364)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:310)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:1006)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:630)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.rekreation.learning.vaadin.VadinExampleApplication.main(VadinExampleApplication.java:17)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2025-07-15 12:00:07.095 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-07-15 12:00:07.096 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-15 12:00:07.096 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2025-07-15 12:00:07.097 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-07-15 12:00:45.390 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-07-15 12:00:45.412 [restartedMain] INFO  c.r.l.vaadin.VadinExampleApplication - Starting VadinExampleApplication using Java 21.0.7 with PID 16609 (/Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example/target/classes started by tushartari in /Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example)
+2025-07-15 12:00:45.412 [restartedMain] DEBUG c.r.l.vaadin.VadinExampleApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-15 12:00:45.413 [restartedMain] INFO  c.r.l.vaadin.VadinExampleApplication - The following 1 profile is active: "production"
+2025-07-15 12:00:45.431 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/tushartari/.m2/repository/commons-logging/commons-logging/1.0.3/commons-logging-1.0.3.jar referenced one or more files that do not exist: file:/Users/tushartari/.m2/repository/commons-logging/commons-logging/1.0.3/log4j.jar,file:/Users/tushartari/.m2/repository/commons-logging/commons-logging/1.0.3/log4j-core.jar
+2025-07-15 12:00:45.431 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/tushartari/.m2/repository/com/sun/xml/bind/jaxb-xjc/4.0.5/jaxb-xjc-4.0.5.jar referenced one or more files that do not exist: file:/Users/tushartari/.m2/repository/com/sun/xml/bind/jaxb-xjc/4.0.5/jaxb-core.jar,file:/Users/tushartari/.m2/repository/com/sun/xml/bind/jaxb-xjc/4.0.5/jaxb-impl.jar
+2025-07-15 12:00:45.431 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/tushartari/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/Users/tushartari/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/Users/tushartari/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2025-07-15 12:00:45.431 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-15 12:00:45.431 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-15 12:00:45.813 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-15 12:00:45.888 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 5 JPA repository interfaces.
+2025-07-15 12:00:46.234 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-07-15 12:00:46.241 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-15 12:00:46.241 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-15 12:00:46.241 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-15 12:00:46.271 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-15 12:00:46.271 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 840 ms
+2025-07-15 12:00:46.336 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereHandler com.vaadin.hilla.push.PushEndpoint mapped to context-path: /HILLA/push
+2025-07-15 12:00:46.336 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.hilla.push.PushEndpoint
+2025-07-15 12:00:46.336 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.AtmosphereResourceLifecycleInterceptor : Atmosphere LifeCycle
+2025-07-15 12:00:46.336 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.client.TrackMessageSizeInterceptor :  Track Message Size Interceptor using |
+2025-07-15 12:00:46.336 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.SuspendTrackerInterceptor : UUID Tracking Interceptor
+2025-07-15 12:00:46.352 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing AtmosphereFramework
+2025-07-15 12:00:51.784 [restartedMain] INFO  c.v.f.s.VaadinServletContextInitializer - Search for subclasses and classes with annotations took 5347 ms
+2025-07-15 12:00:52.031 [restartedMain] INFO  c.v.b.d.s.DevModeStartupListener - Starting dev-mode updaters in /Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example folder.
+2025-07-15 12:00:52.055 [restartedMain] INFO  c.v.f.s.f.s.FullDependenciesScanner - Visited 128 classes. Took 15 ms.
+2025-07-15 12:00:52.056 [restartedMain] INFO  c.v.f.s.f.BundleValidationUtil - Checking if a development mode bundle build is needed
+2025-07-15 12:00:52.297 [restartedMain] INFO  c.v.f.s.f.BundleValidationUtil - A development mode bundle build is not needed
+2025-07-15 12:00:52.312 [vaadin-dev-server-1] INFO  c.v.f.s.f.TaskCopyFrontendFiles - Copying frontend resources from jar files ...
+2025-07-15 12:00:52.366 [vaadin-dev-server-1] INFO  c.v.f.s.f.TaskCopyFrontendFiles - Visited 27 resources. Took 53 ms.
+2025-07-15 12:00:52.387 [vaadin-dev-server-1] WARN  c.v.f.s.frontend.TaskUpdateImports - Use the './' prefix for files in the '/Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example/./src/main/frontend' folder: 'generated/jar-resources/field-highlighter/theme/lumo/vaadin-user-tags.js', please update your annotations.
+2025-07-15 12:00:52.388 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-15 12:00:52.406 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-15 12:00:52.419 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-15 12:00:52.517 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-15 12:00:52.529 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-15 12:00:52.604 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1f3750c4
+2025-07-15 12:00:52.605 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-15 12:00:52.618 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-15 12:00:52.625 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-15 12:00:52.987 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-15 12:00:53.123 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-15 12:00:53.243 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+2025-07-15 12:00:53.252 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-15 12:00:53.298 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-15 12:00:53.315 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name getUserDetailsService
+2025-07-15 12:00:53.532 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-07-15 12:00:53.542 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereHandler com.vaadin.flow.server.communication.PushAtmosphereHandler mapped to context-path: /*
+2025-07-15 12:00:53.542 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.flow.server.communication.PushAtmosphereHandler
+2025-07-15 12:00:53.555 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using org.atmosphere.util.VoidAnnotationProcessor for processing annotation
+2025-07-15 12:00:53.558 [restartedMain] INFO  org.atmosphere.util.ForkJoinPool - Using ForkJoinPool  java.util.concurrent.ForkJoinPool. Set the org.atmosphere.cpr.broadcaster.maxAsyncWriteThreads to -1 to fully use its power.
+2025-07-15 12:00:53.560 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+2025-07-15 12:00:53.561 [restartedMain] INFO  o.a.container.JSR356AsyncSupport - JSR 356 Mapping path /VAADIN/push
+2025-07-15 12:00:53.565 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installing Default AtmosphereInterceptors
+2025-07-15 12:00:53.565 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+2025-07-15 12:00:53.565 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+2025-07-15 12:00:53.565 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+2025-07-15 12:00:53.565 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+2025-07-15 12:00:53.566 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.HeartbeatInterceptor : Heartbeat Interceptor Support
+2025-07-15 12:00:53.566 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+2025-07-15 12:00:53.566 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+2025-07-15 12:00:53.566 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+2025-07-15 12:00:53.566 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+2025-07-15 12:00:53.566 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+2025-07-15 12:00:53.566 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+2025-07-15 12:00:53.566 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor CORS Interceptor Support with priority FIRST_BEFORE_DEFAULT 
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Default Response's Headers Interceptor with priority AFTER_DEFAULT 
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Browser Padding Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Android Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.a.interceptor.HeartbeatInterceptor - HeartbeatInterceptor configured with padding value 'X', client frequency 0 seconds and server frequency 60 seconds
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Heartbeat Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor SSE Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor JSONP Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Atmosphere JavaScript Protocol with priority AFTER_DEFAULT 
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor with priority AFTER_DEFAULT 
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Browser disconnection detection with priority AFTER_DEFAULT 
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor org.atmosphere.interceptor.IdleResourceInterceptor with priority BEFORE_DEFAULT 
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Broadcaster Shared List Resources: false
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Broadcaster Polling Wait Time 100
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Shared ExecutorService supported: true
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Messaging ExecutorService Pool Size unavailable - Not instance of ThreadPoolExecutor
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Async I/O Thread Pool Size: 200
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using AtmosphereResurceFactory: org.atmosphere.cpr.DefaultAtmosphereResourceFactory
+2025-07-15 12:00:53.567 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+2025-07-15 12:00:53.568 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Invoke AtmosphereInterceptor on WebSocket message true
+2025-07-15 12:00:53.568 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - HttpSession supported: true
+2025-07-15 12:00:53.568 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using org.atmosphere.inject.InjectableObjectFactory for dependency injection and object creation
+2025-07-15 12:00:53.568 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/10.1.42 using jakarta.servlet/3.0 and jsr356/WebSocket API
+2025-07-15 12:00:53.568 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere Framework 3.0.5.slf4jvaadin1 started.
+2025-07-15 12:00:53.569 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor  Track Message Size Interceptor using | with priority BEFORE_DEFAULT 
+2025-07-15 12:00:53.592 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-15 12:00:53.602 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using org.atmosphere.cpr.DefaultAnnotationProcessor for processing annotation
+2025-07-15 12:00:53.602 [restartedMain] INFO  o.a.cpr.DefaultAnnotationProcessor - AnnotationProcessor class org.atmosphere.cpr.DefaultAnnotationProcessor$BytecodeBasedAnnotationProcessor being used
+2025-07-15 12:00:53.815 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-15 12:00:53.815 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-15 12:00:53.816 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-15 12:00:53.854 [http-nio-8080-exec-1] WARN  c.v.f.s.c.PushAtmosphereHandler - AtmosphereHandler.onRequest called before PushHandler has been set. This should really not happen
+2025-07-15 12:00:55.947 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Auto detecting WebSocketHandler in /WEB-INF/classes/
+2025-07-15 12:00:55.948 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+2025-07-15 12:00:55.948 [restartedMain] INFO  o.a.container.JSR356AsyncSupport - JSR 356 Mapping path /HILLA/push
+2025-07-15 12:00:55.948 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installing Default AtmosphereInterceptors
+2025-07-15 12:00:55.948 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+2025-07-15 12:00:55.948 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.HeartbeatInterceptor : Heartbeat Interceptor Support
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor CORS Interceptor Support with priority FIRST_BEFORE_DEFAULT 
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Default Response's Headers Interceptor with priority AFTER_DEFAULT 
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Browser Padding Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Android Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.a.interceptor.HeartbeatInterceptor - HeartbeatInterceptor configured with padding value 'X', client frequency 0 seconds and server frequency 60 seconds
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Heartbeat Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor SSE Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor JSONP Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Atmosphere JavaScript Protocol with priority AFTER_DEFAULT 
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor with priority AFTER_DEFAULT 
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Browser disconnection detection with priority AFTER_DEFAULT 
+2025-07-15 12:00:55.949 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor org.atmosphere.interceptor.IdleResourceInterceptor with priority BEFORE_DEFAULT 
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+2025-07-15 12:00:55.950 [restartedMain] WARN  o.atmosphere.cpr.AtmosphereFramework - No BroadcasterCache configured. Broadcasted message between client reconnection will be LOST. It is recommended to configure the org.atmosphere.cache.UUIDBroadcasterCache
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Default Broadcaster Class: org.atmosphere.util.SimpleBroadcaster
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Broadcaster Shared List Resources: false
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Broadcaster Polling Wait Time 100
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Shared ExecutorService supported: true
+2025-07-15 12:00:55.950 [restartedMain] INFO  org.atmosphere.util.ForkJoinPool - Using ForkJoinPool  java.util.concurrent.ForkJoinPool. Set the org.atmosphere.cpr.broadcaster.maxAsyncWriteThreads to -1 to fully use its power.
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Messaging ExecutorService Pool Size unavailable - Not instance of ThreadPoolExecutor
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Async I/O Thread Pool Size: 200
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using AtmosphereResurceFactory: org.atmosphere.cpr.DefaultAtmosphereResourceFactory
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Invoke AtmosphereInterceptor on WebSocket message true
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - HttpSession supported: false
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using org.atmosphere.inject.InjectableObjectFactory for dependency injection and object creation
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/10.1.42 using jakarta.servlet/3.0 and jsr356/WebSocket API
+2025-07-15 12:00:55.950 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere Framework 3.0.5.slf4jvaadin1 started.
+2025-07-15 12:00:55.954 [restartedMain] INFO  c.v.f.s.DefaultDeploymentConfiguration - 
+Vaadin is running in DEVELOPMENT mode - do not use for production deployments.
+2025-07-15 12:00:55.964 [restartedMain] INFO  c.v.flow.spring.SpringInstantiator - The number of beans implementing 'I18NProvider' is 0. Cannot use Spring beans for I18N, falling back to the default behavior
+2025-07-15 12:00:56.003 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-07-15 12:00:56.007 [restartedMain] INFO  c.r.l.vaadin.VadinExampleApplication - Started VadinExampleApplication in 10.815 seconds (process running for 11.331)
+2025-07-15 12:00:56.008 [restartedMain] INFO  c.v.b.d.DevModeHandlerManagerImpl - Application running at http://localhost:8080/
+2025-07-15 12:01:00.866 [http-nio-8080-exec-9] INFO  c.r.l.vaadin.ui.view.list.ListView - Updating list...
+2025-07-15 12:01:00.894 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        c.customer_name,
+        m.machine_number,
+        m.machine_model,
+        m.year,
+        m.bill_date,
+        a.address,
+        r.district,
+        r.city,
+        r.state,
+        r.country 
+    from
+        machine m 
+    join
+        client c 
+            on m.client_id = c.client_id 
+    join
+        address a 
+            on c.client_id = a.client_id 
+    join
+        region r 
+            on a.region_id = r.region_id
+2025-07-15 12:01:00.894 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        c.customer_name,
+        m.machine_number,
+        m.machine_model,
+        m.year,
+        m.bill_date,
+        a.address,
+        r.district,
+        r.city,
+        r.state,
+        r.country 
+    from
+        machine m 
+    join
+        client c 
+            on m.client_id = c.client_id 
+    join
+        address a 
+            on c.client_id = a.client_id 
+    join
+        region r 
+            on a.region_id = r.region_id
+2025-07-15 12:01:00.905 [http-nio-8080-exec-9] WARN  c.r.l.vaadin.service.InvoiceService - No data found in the database for combined invoices.
+2025-07-15 12:02:41.526 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-15 12:02:43.540 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-15 12:02:43.577 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-15 12:02:43.584 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-15 12:02:43.586 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-15 12:06:04.425 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-07-15 12:06:04.449 [restartedMain] INFO  c.r.l.vaadin.VadinExampleApplication - Starting VadinExampleApplication using Java 21.0.7 with PID 16848 (/Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example/target/classes started by tushartari in /Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example)
+2025-07-15 12:06:04.449 [restartedMain] INFO  c.r.l.vaadin.VadinExampleApplication - Starting VadinExampleApplication using Java 21.0.7 with PID 16848 (/Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example/target/classes started by tushartari in /Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example)
+2025-07-15 12:06:04.449 [restartedMain] DEBUG c.r.l.vaadin.VadinExampleApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-15 12:06:04.449 [restartedMain] DEBUG c.r.l.vaadin.VadinExampleApplication - Running with Spring Boot v3.5.3, Spring v6.2.8
+2025-07-15 12:06:04.450 [restartedMain] INFO  c.r.l.vaadin.VadinExampleApplication - The following 1 profile is active: "production"
+2025-07-15 12:06:04.450 [restartedMain] INFO  c.r.l.vaadin.VadinExampleApplication - The following 1 profile is active: "production"
+2025-07-15 12:06:04.472 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/tushartari/.m2/repository/commons-logging/commons-logging/1.0.3/commons-logging-1.0.3.jar referenced one or more files that do not exist: file:/Users/tushartari/.m2/repository/commons-logging/commons-logging/1.0.3/log4j.jar,file:/Users/tushartari/.m2/repository/commons-logging/commons-logging/1.0.3/log4j-core.jar
+2025-07-15 12:06:04.472 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/tushartari/.m2/repository/com/sun/xml/bind/jaxb-xjc/4.0.5/jaxb-xjc-4.0.5.jar referenced one or more files that do not exist: file:/Users/tushartari/.m2/repository/com/sun/xml/bind/jaxb-xjc/4.0.5/jaxb-core.jar,file:/Users/tushartari/.m2/repository/com/sun/xml/bind/jaxb-xjc/4.0.5/jaxb-impl.jar
+2025-07-15 12:06:04.472 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in /Users/tushartari/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jaxb-core-4.0.5.jar referenced one or more files that do not exist: file:/Users/tushartari/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.activation-api.jar,file:/Users/tushartari/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jakarta.xml.bind-api.jar
+2025-07-15 12:06:04.472 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-15 12:06:04.472 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-15 12:06:04.892 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-15 12:06:04.979 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 5 JPA repository interfaces.
+2025-07-15 12:06:05.384 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-07-15 12:06:05.392 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-15 12:06:05.393 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-15 12:06:05.393 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-15 12:06:05.423 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-15 12:06:05.423 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 951 ms
+2025-07-15 12:06:05.498 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereHandler com.vaadin.hilla.push.PushEndpoint mapped to context-path: /HILLA/push
+2025-07-15 12:06:05.499 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.hilla.push.PushEndpoint
+2025-07-15 12:06:05.499 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.AtmosphereResourceLifecycleInterceptor : Atmosphere LifeCycle
+2025-07-15 12:06:05.499 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.client.TrackMessageSizeInterceptor :  Track Message Size Interceptor using |
+2025-07-15 12:06:05.499 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.SuspendTrackerInterceptor : UUID Tracking Interceptor
+2025-07-15 12:06:05.522 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing AtmosphereFramework
+2025-07-15 12:06:12.001 [restartedMain] INFO  c.v.f.s.VaadinServletContextInitializer - Search for subclasses and classes with annotations took 6383 ms
+2025-07-15 12:06:12.256 [restartedMain] INFO  c.v.b.d.s.DevModeStartupListener - Starting dev-mode updaters in /Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example folder.
+2025-07-15 12:06:12.282 [restartedMain] INFO  c.v.f.s.f.s.FullDependenciesScanner - Visited 128 classes. Took 17 ms.
+2025-07-15 12:06:12.283 [restartedMain] INFO  c.v.f.s.f.BundleValidationUtil - Checking if a development mode bundle build is needed
+2025-07-15 12:06:12.541 [restartedMain] INFO  c.v.f.s.f.BundleValidationUtil - A development mode bundle build is not needed
+2025-07-15 12:06:12.558 [vaadin-dev-server-1] INFO  c.v.f.s.f.TaskCopyFrontendFiles - Copying frontend resources from jar files ...
+2025-07-15 12:06:12.613 [vaadin-dev-server-1] INFO  c.v.f.s.f.TaskCopyFrontendFiles - Visited 27 resources. Took 55 ms.
+2025-07-15 12:06:12.637 [vaadin-dev-server-1] WARN  c.v.f.s.frontend.TaskUpdateImports - Use the './' prefix for files in the '/Users/tushartari/tushar/tutorialprojects/vaadinprojects/vaadin-example/./src/main/frontend' folder: 'generated/jar-resources/field-highlighter/theme/lumo/vaadin-user-tags.js', please update your annotations.
+2025-07-15 12:06:12.644 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-15 12:06:12.668 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-15 12:06:12.683 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-07-15 12:06:12.811 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-15 12:06:12.826 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-15 12:06:12.914 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c6390e1
+2025-07-15 12:06:12.914 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-15 12:06:12.932 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-07-15 12:06:12.942 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-15 12:06:13.405 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-15 12:06:13.550 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-15 12:06:13.695 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+2025-07-15 12:06:13.695 [restartedMain] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+2025-07-15 12:06:13.705 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-07-15 12:06:13.765 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-15 12:06:13.785 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name getUserDetailsService
+2025-07-15 12:06:14.031 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-07-15 12:06:14.041 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereHandler com.vaadin.flow.server.communication.PushAtmosphereHandler mapped to context-path: /*
+2025-07-15 12:06:14.041 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed the following AtmosphereInterceptor mapped to AtmosphereHandler com.vaadin.flow.server.communication.PushAtmosphereHandler
+2025-07-15 12:06:14.055 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using org.atmosphere.util.VoidAnnotationProcessor for processing annotation
+2025-07-15 12:06:14.058 [restartedMain] INFO  org.atmosphere.util.ForkJoinPool - Using ForkJoinPool  java.util.concurrent.ForkJoinPool. Set the org.atmosphere.cpr.broadcaster.maxAsyncWriteThreads to -1 to fully use its power.
+2025-07-15 12:06:14.061 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+2025-07-15 12:06:14.063 [restartedMain] INFO  o.a.container.JSR356AsyncSupport - JSR 356 Mapping path /VAADIN/push
+2025-07-15 12:06:14.069 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installing Default AtmosphereInterceptors
+2025-07-15 12:06:14.069 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+2025-07-15 12:06:14.069 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+2025-07-15 12:06:14.069 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+2025-07-15 12:06:14.069 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+2025-07-15 12:06:14.069 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.HeartbeatInterceptor : Heartbeat Interceptor Support
+2025-07-15 12:06:14.070 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+2025-07-15 12:06:14.070 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+2025-07-15 12:06:14.070 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+2025-07-15 12:06:14.070 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+2025-07-15 12:06:14.070 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor CORS Interceptor Support with priority FIRST_BEFORE_DEFAULT 
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Default Response's Headers Interceptor with priority AFTER_DEFAULT 
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Browser Padding Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Android Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.a.interceptor.HeartbeatInterceptor - HeartbeatInterceptor configured with padding value 'X', client frequency 0 seconds and server frequency 60 seconds
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Heartbeat Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor SSE Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor JSONP Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Atmosphere JavaScript Protocol with priority AFTER_DEFAULT 
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor with priority AFTER_DEFAULT 
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Browser disconnection detection with priority AFTER_DEFAULT 
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor org.atmosphere.interceptor.IdleResourceInterceptor with priority BEFORE_DEFAULT 
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using BroadcasterCache: org.atmosphere.cache.UUIDBroadcasterCache
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Default Broadcaster Class: org.atmosphere.cpr.DefaultBroadcaster
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Broadcaster Shared List Resources: false
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Broadcaster Polling Wait Time 100
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Shared ExecutorService supported: true
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Messaging ExecutorService Pool Size unavailable - Not instance of ThreadPoolExecutor
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Async I/O Thread Pool Size: 200
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using AtmosphereResurceFactory: org.atmosphere.cpr.DefaultAtmosphereResourceFactory
+2025-07-15 12:06:14.071 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+2025-07-15 12:06:14.072 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Invoke AtmosphereInterceptor on WebSocket message true
+2025-07-15 12:06:14.072 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - HttpSession supported: true
+2025-07-15 12:06:14.072 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using org.atmosphere.inject.InjectableObjectFactory for dependency injection and object creation
+2025-07-15 12:06:14.072 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/10.1.42 using jakarta.servlet/3.0 and jsr356/WebSocket API
+2025-07-15 12:06:14.072 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere Framework 3.0.5.slf4jvaadin1 started.
+2025-07-15 12:06:14.074 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor  Track Message Size Interceptor using | with priority BEFORE_DEFAULT 
+2025-07-15 12:06:14.102 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-15 12:06:14.114 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using org.atmosphere.cpr.DefaultAnnotationProcessor for processing annotation
+2025-07-15 12:06:14.114 [restartedMain] INFO  o.a.cpr.DefaultAnnotationProcessor - AnnotationProcessor class org.atmosphere.cpr.DefaultAnnotationProcessor$BytecodeBasedAnnotationProcessor being used
+2025-07-15 12:06:16.724 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Auto detecting WebSocketHandler in /WEB-INF/classes/
+2025-07-15 12:06:16.725 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed WebSocketProtocol org.atmosphere.websocket.protocol.SimpleHttpProtocol 
+2025-07-15 12:06:16.725 [restartedMain] INFO  o.a.container.JSR356AsyncSupport - JSR 356 Mapping path /HILLA/push
+2025-07-15 12:06:16.726 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installing Default AtmosphereInterceptors
+2025-07-15 12:06:16.726 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CorsInterceptor : CORS Interceptor Support
+2025-07-15 12:06:16.726 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.CacheHeadersInterceptor : Default Response's Headers Interceptor
+2025-07-15 12:06:16.726 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.PaddingAtmosphereInterceptor : Browser Padding Interceptor Support
+2025-07-15 12:06:16.726 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.AndroidAtmosphereInterceptor : Android Interceptor Support
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.HeartbeatInterceptor : Heartbeat Interceptor Support
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.SSEAtmosphereInterceptor : SSE Interceptor Support
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JSONPAtmosphereInterceptor : JSONP Interceptor Support
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.JavaScriptProtocol : Atmosphere JavaScript Protocol
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor : org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.OnDisconnectInterceptor : Browser disconnection detection
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - 	org.atmosphere.interceptor.IdleResourceInterceptor : org.atmosphere.interceptor.IdleResourceInterceptor
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Set org.atmosphere.cpr.AtmosphereInterceptor.disableDefaults to disable them.
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor CORS Interceptor Support with priority FIRST_BEFORE_DEFAULT 
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Default Response's Headers Interceptor with priority AFTER_DEFAULT 
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Browser Padding Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Android Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.a.interceptor.HeartbeatInterceptor - HeartbeatInterceptor configured with padding value 'X', client frequency 0 seconds and server frequency 60 seconds
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Heartbeat Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor SSE Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor JSONP Interceptor Support with priority AFTER_DEFAULT 
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Atmosphere JavaScript Protocol with priority AFTER_DEFAULT 
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor org.atmosphere.interceptor.WebSocketMessageSuspendInterceptor with priority AFTER_DEFAULT 
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor Browser disconnection detection with priority AFTER_DEFAULT 
+2025-07-15 12:06:16.727 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Installed AtmosphereInterceptor org.atmosphere.interceptor.IdleResourceInterceptor with priority BEFORE_DEFAULT 
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using EndpointMapper class org.atmosphere.util.DefaultEndpointMapper
+2025-07-15 12:06:16.728 [restartedMain] WARN  o.atmosphere.cpr.AtmosphereFramework - No BroadcasterCache configured. Broadcasted message between client reconnection will be LOST. It is recommended to configure the org.atmosphere.cache.UUIDBroadcasterCache
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Default Broadcaster Class: org.atmosphere.util.SimpleBroadcaster
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Broadcaster Shared List Resources: false
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Broadcaster Polling Wait Time 100
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Shared ExecutorService supported: true
+2025-07-15 12:06:16.728 [restartedMain] INFO  org.atmosphere.util.ForkJoinPool - Using ForkJoinPool  java.util.concurrent.ForkJoinPool. Set the org.atmosphere.cpr.broadcaster.maxAsyncWriteThreads to -1 to fully use its power.
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Messaging ExecutorService Pool Size unavailable - Not instance of ThreadPoolExecutor
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Async I/O Thread Pool Size: 200
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using BroadcasterFactory: org.atmosphere.cpr.DefaultBroadcasterFactory
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using AtmosphereResurceFactory: org.atmosphere.cpr.DefaultAtmosphereResourceFactory
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Using WebSocketProcessor: org.atmosphere.websocket.DefaultWebSocketProcessor
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Invoke AtmosphereInterceptor on WebSocket message true
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - HttpSession supported: false
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using org.atmosphere.inject.InjectableObjectFactory for dependency injection and object creation
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere is using async support: org.atmosphere.container.JSR356AsyncSupport running under container: Apache Tomcat/10.1.42 using jakarta.servlet/3.0 and jsr356/WebSocket API
+2025-07-15 12:06:16.728 [restartedMain] INFO  o.atmosphere.cpr.AtmosphereFramework - Atmosphere Framework 3.0.5.slf4jvaadin1 started.
+2025-07-15 12:06:16.734 [restartedMain] INFO  c.v.f.s.DefaultDeploymentConfiguration - 
+Vaadin is running in DEVELOPMENT mode - do not use for production deployments.
+2025-07-15 12:06:16.754 [restartedMain] INFO  c.v.flow.spring.SpringInstantiator - The number of beans implementing 'I18NProvider' is 0. Cannot use Spring beans for I18N, falling back to the default behavior
+2025-07-15 12:06:16.791 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-15 12:06:16.792 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-15 12:06:16.793 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-15 12:06:16.815 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-07-15 12:06:16.821 [restartedMain] INFO  c.r.l.vaadin.VadinExampleApplication - Started VadinExampleApplication in 12.626 seconds (process running for 14.096)
+2025-07-15 12:06:16.821 [restartedMain] INFO  c.r.l.vaadin.VadinExampleApplication - Started VadinExampleApplication in 12.626 seconds (process running for 14.096)
+2025-07-15 12:06:16.823 [restartedMain] INFO  c.v.b.d.DevModeHandlerManagerImpl - Application running at http://localhost:8080/
+2025-07-15 12:06:27.953 [http-nio-8080-exec-2] INFO  c.r.l.vaadin.ui.view.list.ListView - Updating list...
+2025-07-15 12:06:27.953 [http-nio-8080-exec-2] INFO  c.r.l.vaadin.ui.view.list.ListView - Updating list...
+2025-07-15 12:06:42.800 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        c.customer_name,
+        m.machine_number,
+        m.machine_model,
+        m.year,
+        m.bill_date,
+        a.address,
+        r.district,
+        r.city,
+        r.state,
+        r.country 
+    from
+        machine m 
+    join
+        client c 
+            on m.client_id = c.client_id 
+    join
+        address a 
+            on c.client_id = a.client_id 
+    join
+        region r 
+            on a.region_id = r.region_id
+2025-07-15 12:06:42.800 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        c.customer_name,
+        m.machine_number,
+        m.machine_model,
+        m.year,
+        m.bill_date,
+        a.address,
+        r.district,
+        r.city,
+        r.state,
+        r.country 
+    from
+        machine m 
+    join
+        client c 
+            on m.client_id = c.client_id 
+    join
+        address a 
+            on c.client_id = a.client_id 
+    join
+        region r 
+            on a.region_id = r.region_id
+2025-07-15 12:09:08.791 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m55s767ms).
+2025-07-15 12:09:08.806 [http-nio-8080-exec-2] WARN  c.r.l.vaadin.service.InvoiceService - No data found in the database for combined invoices.
+2025-07-15 12:09:08.806 [http-nio-8080-exec-2] WARN  c.r.l.vaadin.service.InvoiceService - No data found in the database for combined invoices.
+2025-07-15 12:09:17.586 [copilot-compilation-status-checker-1] WARN  c.v.copilot.ide.CopilotIDEPlugin - Unable to communicate with IDE plugin, please check if plugin is running. You might need to reopen your project or reinstall plugin.
+2025-07-15 12:09:18.678 [http-nio-8080-exec-10] INFO  c.r.l.v.u.v.list.ListGridWithExport - Updating list...
+2025-07-15 12:09:18.678 [http-nio-8080-exec-10] INFO  c.r.l.v.u.v.list.ListGridWithExport - Updating list...
+2025-07-15 12:09:21.734 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c.customer_name,
+        m.machine_number,
+        m.machine_model,
+        m.year,
+        m.bill_date,
+        a.address,
+        r.district,
+        r.city,
+        r.state,
+        r.country 
+    from
+        machine m 
+    join
+        client c 
+            on m.client_id = c.client_id 
+    join
+        address a 
+            on c.client_id = a.client_id 
+    join
+        region r 
+            on a.region_id = r.region_id
+2025-07-15 12:09:21.734 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c.customer_name,
+        m.machine_number,
+        m.machine_model,
+        m.year,
+        m.bill_date,
+        a.address,
+        r.district,
+        r.city,
+        r.state,
+        r.country 
+    from
+        machine m 
+    join
+        client c 
+            on m.client_id = c.client_id 
+    join
+        address a 
+            on c.client_id = a.client_id 
+    join
+        region r 
+            on a.region_id = r.region_id
+2025-07-15 12:17:22.508 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m13s649ms).
+2025-07-15 12:17:29.088 [http-nio-8080-exec-4] ERROR c.v.flow.server.DefaultErrorHandler - 
+java.lang.IllegalStateException: Problem creating workbook
+	at com.flowingcode.vaadin.addons.gridexporter.ExcelStreamResourceWriter.getBaseTemplateWorkbook(ExcelStreamResourceWriter.java:408)
+	at com.flowingcode.vaadin.addons.gridexporter.ExcelStreamResourceWriter.createWorkbook(ExcelStreamResourceWriter.java:87)
+	at com.flowingcode.vaadin.addons.gridexporter.ExcelStreamResourceWriter.accept(ExcelStreamResourceWriter.java:77)
+	at com.flowingcode.vaadin.addons.gridexporter.ConcurrentStreamResourceWriter.accept(ConcurrentStreamResourceWriter.java:254)
+	at com.vaadin.flow.server.communication.StreamResourceHandler.handleRequest(StreamResourceHandler.java:86)
+	at com.vaadin.flow.server.communication.StreamRequestHandler.handleRequest(StreamRequestHandler.java:122)
+	at com.vaadin.flow.server.VaadinService.handleRequest(VaadinService.java:1853)
+	at com.vaadin.flow.server.VaadinServlet.service(VaadinServlet.java:398)
+	at com.vaadin.flow.spring.SpringServlet.service(SpringServlet.java:106)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:612)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:394)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:323)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:268)
+	at org.springframework.web.servlet.mvc.ServletForwardingController.handleRequestInternal(ServletForwardingController.java:142)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:178)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:51)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:235)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:229)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "java.io.InputStream.markSupported()" because "stream" is null
+	at org.apache.poi.poifs.filesystem.FileMagic.prepareToCheckMagic(FileMagic.java:222)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:214)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+	at com.flowingcode.vaadin.addons.gridexporter.ExcelStreamResourceWriter.getBaseTemplateWorkbook(ExcelStreamResourceWriter.java:405)
+	... 111 common frames omitted
+2025-07-15 12:17:29.095 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[/].[springServlet] - Servlet.service() for servlet [springServlet] threw exception
+java.lang.NullPointerException: Cannot invoke "java.io.InputStream.markSupported()" because "stream" is null
+	at org.apache.poi.poifs.filesystem.FileMagic.prepareToCheckMagic(FileMagic.java:222)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:214)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+	at com.flowingcode.vaadin.addons.gridexporter.ExcelStreamResourceWriter.getBaseTemplateWorkbook(ExcelStreamResourceWriter.java:405)
+	at com.flowingcode.vaadin.addons.gridexporter.ExcelStreamResourceWriter.createWorkbook(ExcelStreamResourceWriter.java:87)
+	at com.flowingcode.vaadin.addons.gridexporter.ExcelStreamResourceWriter.accept(ExcelStreamResourceWriter.java:77)
+	at com.flowingcode.vaadin.addons.gridexporter.ConcurrentStreamResourceWriter.accept(ConcurrentStreamResourceWriter.java:254)
+	at com.vaadin.flow.server.communication.StreamResourceHandler.handleRequest(StreamResourceHandler.java:86)
+	at com.vaadin.flow.server.communication.StreamRequestHandler.handleRequest(StreamRequestHandler.java:122)
+	at com.vaadin.flow.server.VaadinService.handleRequest(VaadinService.java:1853)
+	at com.vaadin.flow.server.VaadinServlet.service(VaadinServlet.java:398)
+	at com.vaadin.flow.spring.SpringServlet.service(SpringServlet.java:106)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:612)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:394)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:323)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:268)
+	at org.springframework.web.servlet.mvc.ServletForwardingController.handleRequestInternal(ServletForwardingController.java:142)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:178)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:51)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:235)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:229)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-07-15 12:17:29.100 [http-nio-8080-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [com.vaadin.flow.server.ServiceException: java.lang.IllegalStateException: Problem creating workbook] with root cause
+java.lang.NullPointerException: Cannot invoke "java.io.InputStream.markSupported()" because "stream" is null
+	at org.apache.poi.poifs.filesystem.FileMagic.prepareToCheckMagic(FileMagic.java:222)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:214)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+	at com.flowingcode.vaadin.addons.gridexporter.ExcelStreamResourceWriter.getBaseTemplateWorkbook(ExcelStreamResourceWriter.java:405)
+	at com.flowingcode.vaadin.addons.gridexporter.ExcelStreamResourceWriter.createWorkbook(ExcelStreamResourceWriter.java:87)
+	at com.flowingcode.vaadin.addons.gridexporter.ExcelStreamResourceWriter.accept(ExcelStreamResourceWriter.java:77)
+	at com.flowingcode.vaadin.addons.gridexporter.ConcurrentStreamResourceWriter.accept(ConcurrentStreamResourceWriter.java:254)
+	at com.vaadin.flow.server.communication.StreamResourceHandler.handleRequest(StreamResourceHandler.java:86)
+	at com.vaadin.flow.server.communication.StreamRequestHandler.handleRequest(StreamRequestHandler.java:122)
+	at com.vaadin.flow.server.VaadinService.handleRequest(VaadinService.java:1853)
+	at com.vaadin.flow.server.VaadinServlet.service(VaadinServlet.java:398)
+	at com.vaadin.flow.spring.SpringServlet.service(SpringServlet.java:106)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:612)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:394)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:323)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:268)
+	at org.springframework.web.servlet.mvc.ServletForwardingController.handleRequestInternal(ServletForwardingController.java:142)
+	at org.springframework.web.servlet.mvc.AbstractController.handleRequest(AbstractController.java:178)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:51)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:235)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:229)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-07-15 12:17:29.113 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Ignoring exception, response committed already: org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.LinkedHashMap] with preset Content-Type 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+2025-07-15 12:17:29.113 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.LinkedHashMap] with preset Content-Type 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet']
+2025-07-15 12:17:46.296 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-15 12:17:48.305 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-15 12:17:48.360 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-15 12:17:48.364 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-15 12:17:48.365 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
