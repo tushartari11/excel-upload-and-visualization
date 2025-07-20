@@ -67,7 +67,8 @@ public class FileUploadView extends VerticalLayout {
             excelImporter.importSampleData();
             Notification.show("File imported: " + fileName, 3000, Notification.Position.MIDDLE);
         } catch (Exception e) {
-            Notification notification = Notification.show("Import failed: " + e.getMessage(), 5000, Notification.Position.MIDDLE);
+            log.error("Error importing file: " + fileName, e);
+            Notification notification = Notification.show("Import failed: Please check the logs." , 5000, Notification.Position.MIDDLE);
             notification.addThemeVariants(NotificationVariant.LUMO_ERROR);
         }
     }

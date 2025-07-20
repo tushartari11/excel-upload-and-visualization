@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -21,11 +22,23 @@ public class Client {
     private LocalDate year;
     private String customerName;
 
-    @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Address> addresses;
+    @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Address> addresses = new ArrayList<>();
 
-    @OneToMany(mappedBy = "client")
-    private List<Machine> machines;
+    @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Machine> machines = new ArrayList<>();
+
+    // getters and setters
+
+    public void addAddress(Address address) {
+        addresses.add(address);
+        address.setClient(this);
+    }
+
+    public void addMachines(Machine machine) {
+        machines.add(machine);
+        machine.setClient(this);
+    }
 
     // getters and setters
 }

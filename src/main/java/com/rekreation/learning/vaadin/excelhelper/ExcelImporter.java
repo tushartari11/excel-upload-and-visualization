@@ -16,7 +16,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -109,7 +108,7 @@ public class ExcelImporter {
                 clientList.add(client);
             }
         });
-//         log.info("Importing clientList from Excel file: " + clientList);
+         log.info("Importing clientList from Excel file: " + clientList);
     }
 
     private void importRegionSheet(Sheet sheet) {
@@ -126,7 +125,7 @@ public class ExcelImporter {
                 regionList.add(regionDTO);
             }
         });
-//        log.info("Importing regionList from Excel file: " + regionList);
+        log.info("Importing regionList from Excel file: " + regionList);
     }
 
     private void importMachineSheet(Sheet sheet) {
@@ -204,182 +203,81 @@ public class ExcelImporter {
         return stringValueFromCell;
     }
 
-//    @Transactional
-//    public List<Address> saveAllData() {
-//        List<Address> addresses = new ArrayList<>();
-//        for (AddressDTO addressDTO : addressList) {
-//            RegionDTO regionDTO = regionList.stream()
-//                    .filter(r -> r.getRegionId().equals(addressDTO.getRegionId()))
-//                    .findFirst().orElse(null);
-//
-//            Region region = null;
-//            if (regionDTO != null) {
-//                region = new Region();
-//                region.setCity(regionDTO.getCity());
-//                region.setDistrict(regionDTO.getDistrict());
-//                region.setState(regionDTO.getState());
-//                region.setCountry(regionDTO.getCountry());
-//            }
-//            regionRepository.save(region); // Save region first
-//
-//            //get client from addressDTO and save it
-//            ClientDTO clientDTO = clientList.stream()
-//                    .filter(c -> c.getClientId().equals(addressDTO.getClientNumber()))
-//                    .findFirst().orElse(null);
-//
-//
-//            Client clientEntity = new Client();
-//            clientEntity.setClientId(clientDTO.getClientId());
-//            clientEntity.setYear(clientDTO.getYear());
-//            clientEntity.setCustomerName(clientDTO.getCustomerName());
-//            clientRepository.save(clientEntity); // Save client first
-//
-//            Address addressEntity = new Address();
-//            addressEntity.setAddress(addressDTO.getAddress());
-//            addressEntity.setClient(clientEntity); // Assuming Client is set here
-//            addressEntity.setRegion(region);
-//            addressRepository.save(addressEntity);
-//
-//            MachineDTO machineDTO = machineList.stream()
-//                    .filter(m -> m.getClientNumber().equals(clientDTO.getClientId()))
-//                    .findFirst().orElse(null);
-//
-//            Machine machineEntity = new Machine();
-//            machineEntity.setMachineNumber(machineDTO.getMachineNumber());
-//            machineEntity.setYear(machineDTO.getYear());
-//            machineEntity.setBillDate(machineDTO.getBillDate());
-//            machineEntity.setMachineModel(machineDTO.getMachineModel());
-//            machineEntity.setClient(clientEntity);
-//            machineRepository.save(machineEntity);
-//
-//        }
-//        return addresses;
-//    }
-
-//    public List<Client> mapClientDTOsToEntities() {
-//        List<Address> addresses = mapAddressDTOsToEntities();
-//        addressRepository.saveAll(addresses); // Save addresses first
-//        // log.info("Saved " + addresses.size() + " addresses into excel");
-//
-//        List<Client> clients = new ArrayList<>();
-//        for (ClientDTO clientDTO : clientList) {
-//            List<Address> clientAddresses = addresses.stream()
-//                    .filter(a -> a.getClient().getClientId().equals(clientDTO.getClientId()))
-//                    .toList();
-//
-//            Client client = new Client();
-//            client.setClientId(clientDTO.getClientId());
-//            client.setYear(clientDTO.getYear());
-//            client.setCustomerName(clientDTO.getCustomerName());
-//            client.setAddresses(clientAddresses); // Assuming List<Address> in Client
-//
-//            clients.add(client);
-//        }
-//        return clients;
-//    }
-//
-//    public List<Machine> mapMachineDTOsToEntities() {
-//        List<Client> clients = mapClientDTOsToEntities();
-//        clientRepository.saveAll(clients); // Save clients first
-//
-//        List<Machine> machines = new ArrayList<>();
-//        for (MachineDTO machineDTO : machineList) {
-//            Client client = clients.stream()
-//                    .filter(c -> c.getClientId().equals(machineDTO.getClientNumber()))
-//                    .findFirst().orElse(null);
-//
-//            Machine machine = new Machine();
-//            machine.setMachineNumber(machineDTO.getMachineNumber());
-//            machine.setYear(machineDTO.getYear());
-//            machine.setBillDate(machineDTO.getBillDate());
-//            machine.setMachineModel(machineDTO.getMachineModel());
-//            machine.setClient(client);
-//
-//            machines.add(machine);
-//        }
-//        return machines;
-//    }
-
-//    @Transactional
-//    public void saveAllData() {
-//        List<Machine> machines = mapMachineDTOsToEntities();
-//        machineRepository.saveAll(machines);
-//        log.info("Saved " + machines.size() + " machines into excel");
-//    }
-
     @Transactional
-    public void importSampleData() {
+    public void importSampleData() throws RuntimeException {
         // Clear existing data (optional)
-        machineRepository.deleteAll();
-        addressRepository.deleteAll();
-        clientRepository.deleteAll();
-        regionRepository.deleteAll();
-
-        List<Region> regions = regionList.stream().map(regionDTO -> {
-            Region region = new Region();
-            //region.setRegionId(regionDTO.getRegionId());
-            region.setCity(regionDTO.getCity());
-            region.setDistrict(regionDTO.getDistrict());
-            region.setState(regionDTO.getState());
-            region.setCountry(regionDTO.getCountry());
-            return region;
-        }).toList();
-
-        regionRepository.saveAll(regions);
-        log.info("Saved " + regions.size() + " regions into excel");
-
-        List<Client> clients = clientList.stream().map(clientDTO -> {
-            Client client = new Client();
-            client.setClientId(clientDTO.getClientId());
-            client.setYear(clientDTO.getYear());
-            client.setCustomerName(clientDTO.getCustomerName());
-            List<Address> clientAddresses = getAddressesForClient(clientDTO);
-            client.setAddresses(clientAddresses);
-
-            return client;
-        }).toList();
-
-        clientRepository.saveAll(clients);
-        log.info("Saved " + clients.size() + " clients into excel");
-
-        List<Machine> machines = machineList.stream().map(machineDTO -> {
-            Machine machine = new Machine();
-            machine.setMachineNumber(machineDTO.getMachineNumber());
-            machine.setYear(machineDTO.getYear());
-            machine.setBillDate(machineDTO.getBillDate());
-            machine.setMachineModel(machineDTO.getMachineModel());
-
-            Client client = clients.stream()
-                    .filter(c -> c.getClientId().equals(machineDTO.getClientNumber()))
-                    .findFirst().orElse(null);
-            machine.setClient(client);
-
-            return machine;
-        }).toList();
-        machineRepository.saveAll(machines);
-        log.info("Saved " + machines.size() + " machines into excel");
-    }
-
-    @NotNull
-    private List<Address> getAddressesForClient(ClientDTO clientDTO) {
-        List<Address> clientAddresses = new ArrayList<>();
         try {
-            clientAddresses = addressList.stream()
-                    .filter(a -> a.getClientNumber()!= null)
-                    .filter(a ->  a.getClientNumber().equals(clientDTO.getClientId()))
-                    .map(addressDTO -> {
-                        Address address = new Address();
-                        //address.setAddressId(addressDTO.getAddressId());
-                        address.setAddress(addressDTO.getAddress());
-                        regionRepository.findById(addressDTO.getRegionId())
-                                .ifPresent(region -> address.setRegion(region));
+            log.info("Clearing existing data from repositories");
 
-                        return address;
-                    }).toList();
+            machineRepository.deleteAll();
+            addressRepository.deleteAll();
+            clientRepository.deleteAll();
+            regionRepository.deleteAll();
+
+            List<Region> regions = regionList.stream().map(regionDTO -> {
+                Region region = new Region();
+                region.setRegionId(regionDTO.getRegionId());
+                region.setCity(regionDTO.getCity());
+                region.setDistrict(regionDTO.getDistrict());
+                region.setState(regionDTO.getState());
+                region.setCountry(regionDTO.getCountry());
+                return region;
+            }).toList();
+
+            regionRepository.saveAll(regions);
+            log.info("Saved " + regions.size() + " regions into excel");
+
+            List<Client> clients = clientList.stream().map(clientDTO -> {
+                Client client = new Client();
+                client.setClientId(clientDTO.getClientId());
+                client.setYear(clientDTO.getYear());
+                client.setCustomerName(clientDTO.getCustomerName());
+//            List<Address> clientAddresses = getAddressesForClient(clientDTO);
+//            client.setAddresses(clientAddresses);
+
+                return client;
+            }).toList();
+
+            clientRepository.saveAll(clients);
+            log.info("Saved " + clients.size() + " clients into excel");
+
+            List<Address> addressWithClients = addressList.stream().map(addressDTO -> {
+                Address address = new Address();
+                //address.setAddressId(addressDTO.getAddressId());
+                address.setAddress(addressDTO.getAddress());
+                Region region = regionRepository.findById(addressDTO.getRegionId())
+                        .orElseThrow(() -> new RuntimeException("Region not found for ID: " + addressDTO.getRegionId()));
+                address.setRegion(region);
+
+                Client client = clients.stream()
+                        .filter(c -> c.getClientId().equals(addressDTO.getClientNumber()))
+                        .findFirst().orElse(null);
+                address.setClient(client);
+
+                return address;
+            }).toList();
+
+            addressRepository.saveAll(addressWithClients);
+
+            List<Machine> machines = machineList.stream().map(machineDTO -> {
+                Machine machine = new Machine();
+                machine.setMachineNumber(machineDTO.getMachineNumber());
+                machine.setYear(machineDTO.getYear());
+                machine.setBillDate(machineDTO.getBillDate());
+                machine.setMachineModel(machineDTO.getMachineModel());
+
+                Client client = clients.stream()
+                        .filter(c -> c.getClientId().equals(machineDTO.getClientNumber()))
+                        .findFirst().orElse(null);
+                machine.setClient(client);
+
+                return machine;
+            }).toList();
+            machineRepository.saveAll(machines);
+            log.info("Saved " + machines.size() + " machines into excel");
         } catch (Exception e) {
-            log.error("Error getting addresses for client: " + clientDTO.getClientId(), e);
+            log.error("Error importing data: " + e.getMessage());
+            throw new RuntimeException("Error importing data: " + e.getMessage(), e);
         }
-
-        return clientAddresses;
     }
 }

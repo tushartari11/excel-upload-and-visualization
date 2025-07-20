@@ -24,12 +24,12 @@ public class ListView extends VerticalLayout {
 
     private TextField filterText = new TextField();
     private InvoiceService service;
-
+    private GridCrud crud;
     public ListView(InvoiceService service) {
         this.service = service;
         setSizeFull();
         addClassName("list-view");
-        var crud = new GridCrud<>(InvoiceCombinedDTO.class, service);
+        crud = new GridCrud<>(InvoiceCombinedDTO.class, service);
         crud.getGrid().setColumns(
                 "clientId",
                 "year",
@@ -59,15 +59,9 @@ public class ListView extends VerticalLayout {
         updateList();
     }
 
-    private void configureFilter() {
-        filterText.setPlaceholder("Filter by name...");
-        filterText.setClearButtonVisible(true);
-        filterText.setValueChangeMode(ValueChangeMode.LAZY);
-        filterText.addValueChangeListener(e -> updateList());
-    }
-
     private void updateList() {
         log.info("Updating list...");
+       // crud.getGrid().setItems(service.findAll(filterText.getValue()));
     }
 
     private HorizontalLayout getToolbar() {

@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -15,15 +16,18 @@ import java.util.List;
 public class Region {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long regionId;
     private String city;
     private String district;
     private String state;
     private String country;
 
-    @OneToMany(mappedBy = "region")
-    private List<Address> addresses;
+    @OneToMany(mappedBy = "region", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Address> addresses = new ArrayList<>();
 
-    // getters and setters
+    // Helper method to maintain bidirectional relationship
+    public void addAddress(Address address) {
+        addresses.add(address);
+        address.setRegion(this);
+    }
 }
