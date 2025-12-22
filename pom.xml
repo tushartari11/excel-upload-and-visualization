@@ -126,6 +126,12 @@
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- Logstash encoder for JSON logging (distributed logging support) -->
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>8.0</version>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>

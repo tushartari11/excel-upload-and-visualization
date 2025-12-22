@@ -56,3 +56,6 @@ build/
 ### Vaadin ###
 .vaadin-designer
 .designer
+
+#Logs
+/logs/

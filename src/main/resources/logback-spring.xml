@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="true">
 
-    <!-- Define the log pattern -->
+    <!-- Define the log pattern with correlation ID (traceId) -->
     <property name="LOG_PATTERN"
-              value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
+              value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%X{traceId}] %-5level %logger{36} - %msg%n" />
 
-    <!-- Console appender -->
+    <!-- Console appender - human readable format -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>${LOG_PATTERN}</pattern>
         </encoder>
     </appender>
 
-    <!-- File appender -->
+    <!-- File appender - human readable format -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>logs/app.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
@@ -25,10 +25,32 @@
         </encoder>
     </appender>
 
+    <!-- JSON appender for distributed logging (ELK, Splunk, etc.) -->
+    <appender name="JSON_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/app-json.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/app-json.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <!-- Add custom fields that will appear in every log entry -->
+            <customFields>{"app_name":"vaadin-example","environment":"${SPRING_PROFILES_ACTIVE:-dev}"}</customFields>
+            <!-- Include MDC (Mapped Diagnostic Context) for correlation IDs -->
+            <includeMdcKeyName>traceId</includeMdcKeyName>
+            <includeMdcKeyName>userId</includeMdcKeyName>
+            <includeMdcKeyName>sessionId</includeMdcKeyName>
+            <!-- Include caller data (file, line number, method) - useful for debugging but has performance impact -->
+            <includeCallerData>false</includeCallerData>
+            <!-- Include stack traces -->
+            <includeStackTrace>true</includeStackTrace>
+        </encoder>
+    </appender>
+
     <!-- Root logger -->
     <root level="INFO">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
+        <appender-ref ref="JSON_FILE" />
     </root>
 
     <!-- Hibernate SQL loggers -->

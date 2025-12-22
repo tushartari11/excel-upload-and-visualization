@@ -11,7 +11,8 @@ import $cssFromFile_4 from 'Frontend/generated/jar-resources/fcGridHelper/vaadin
 import $cssFromFile_5 from 'Frontend/generated/jar-resources/fcGridHelper/vaadin-menu-bar-list-box.css?inline';
 import $cssFromFile_6 from 'Frontend/generated/jar-resources/fcGridHelper/vaadin-checkbox.css?inline';
 import $cssFromFile_7 from 'Frontend/styles/shared-styles.css?inline';
-import $cssFromFile_8 from 'Frontend/generated/jar-resources/css/report-ui-styles.css?inline';
+import $cssFromFile_8 from 'Frontend/styles/styles.css?inline';
+import $cssFromFile_9 from 'Frontend/generated/jar-resources/css/report-ui-styles.css?inline';
 import '@vaadin/polymer-legacy-adapter/style-modules.js';
 import '@vaadin/icon/theme/lumo/vaadin-icon.js';
 import '@vaadin/icons/vaadin-iconset.js';
@@ -142,6 +143,9 @@ injectGlobalWebcomponentCss($cssFromFile_7.toString());
 
 injectGlobalCss($cssFromFile_8.toString(), 'CSSImport end', document);
 injectGlobalWebcomponentCss($cssFromFile_8.toString());
+
+injectGlobalCss($cssFromFile_9.toString(), 'CSSImport end', document);
+injectGlobalWebcomponentCss($cssFromFile_9.toString());
 const loadOnDemand = (key) => { return Promise.resolve(0); }
 window.Vaadin = window.Vaadin || {};
 window.Vaadin.Flow = window.Vaadin.Flow || {};
